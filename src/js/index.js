@@ -21,7 +21,10 @@ window.state = state;
 
 const controlSearch = async () => {
     // 1) Get query from view
+    
+    
     const query = searchView.getInput();
+
     //console.log(query);
 
     if (query) {
@@ -145,7 +148,7 @@ elements.shopping.addEventListener('click', e => {
         // Delete from UI
         listView.deleteItem(id);
 
-        
+
         // Handle the count update
     } else if (e.target.matches('.shopping__count-value')) {
         const val = parseFloat(e.target.value, 10);
